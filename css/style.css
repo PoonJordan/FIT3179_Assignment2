@@ -1,0 +1,43 @@
+#choropleth_map {
+	top:50px;
+	bottom: 100px; 
+	left: 100px;
+	right: 150px;
+}
+
+#slope_chart {
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	margin-bottom: 500px;
+}
+
+#horizonatal_bar_chart {
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	margin-bottom: 500px;
+}
+
+body *{
+	font-family: 'Open Sans', sans-serif;
+  }
+  
+  h1 {
+	font-weight: 900;
+  }
+  
+  body {
+	background-color: lightgray;
+  }
+  
+  .vis-container {
+	width: 150%;
+  }
+  
+  .description h2,
+  h1 {
+	margin-top: 0px;
+  }
