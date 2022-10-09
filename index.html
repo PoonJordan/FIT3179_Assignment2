@@ -15,12 +15,10 @@
 
 </head>
 
-
-
 <body>
   <div id="choropleth_map" class="vis-container"></div>
+  <div id="horizontal_bar_chart" class="vis-container"></div>
   <div id="slope_chart" class="vis-container"></div>
-  <div id="horizonatal_bar_chart" class="vis-container"></div>
 
   <script>
       var spec1 = "js/choropleth_map.json";
@@ -30,15 +28,15 @@
           })
           .catch(console.error);
 
-      var spec2 = "js/slope_chart.json";
-          vegaEmbed('#slope_chart', spec2)
+      var spec2 = "js/horizontal_bar_chart.json";
+          vegaEmbed('#horizontal_bar_chart', spec2)
           .then(function(result) {
               // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
           })
           .catch(console.error);
 
-      var spec2 = "js/horizonatal_bar_chart.json";
-          vegaEmbed('#horizonatal_bar_chart', spec2)
+      var spec3 = "js/slope_chart.json";
+          vegaEmbed('#slope_chart', spec3)
           .then(function(result) {
               // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
           })
