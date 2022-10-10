@@ -1,0 +1,102 @@
+[
+    {
+        "Pollution_index": 17.68253178,
+        "year": 1995,
+        "site": "Malaysia"
+    },
+    {
+        "Pollution_index": 16.03580871,
+        "year": 2017,
+        "site": "Malaysia"
+    },
+    {
+        "Pollution_index": 6.839568343,
+        "year": 1995,
+        "site": "Brunei"
+    },
+    {
+        "Pollution_index": 5.903065468,
+        "year": 2017,
+        "site": "Brunei"
+    },
+    {
+        "Pollution_index": 30.0668419,
+        "year": 1995,
+        "site": "Cambodia"
+    },
+    {
+        "Pollution_index": 25.61429187,
+        "year": 2017,
+        "site": "Cambodia"
+    },
+    {
+        "Pollution_index": 18.16476574,
+        "year": 1995,
+        "site": "Indonesia"
+    },
+    {
+        "Pollution_index": 16.5026533,
+        "year": 2017,
+        "site": "Indonesia"
+    },
+    {
+        "Pollution_index": 27.09515908,
+        "year": 1995,
+        "site": "Laos"
+    },
+    {
+        "Pollution_index": 25.10953834,
+        "year": 2017,
+        "site": "Laos"
+    },
+    {
+        "Pollution_index": 40.76525561,
+        "year": 1995,
+        "site": "Myanmar"
+    },
+    {
+        "Pollution_index": 35.55745292,
+        "year": 2017,
+        "site": "Myanmar"
+    },
+    {
+        "Pollution_index": 21.97021787,
+        "year": 1995,
+        "site": "Philippines"
+    },
+    {
+        "Pollution_index": 18.06979891,
+        "year": 2017,
+        "site": "Philippines"
+    },
+    {
+        "Pollution_index": 18.75501505,
+        "year": 1995,
+        "site": "Singapore"
+    },
+    {
+        "Pollution_index": 19.0782565,
+        "year": 2017,
+        "site": "Singapore"
+    },
+    {
+        "Pollution_index": 30.9397171,
+        "year": 1995,
+        "site": "Thailand"
+    },
+    {
+        "Pollution_index": 26.25672656,
+        "year": 2017,
+        "site": "Thailand"
+    },
+    {
+        "Pollution_index": 35.92847732,
+        "year": 1995,
+        "site": "Vietnam"
+    },
+    {
+        "Pollution_index": 29.62672834,
+        "year": 2017,
+        "site": "Vietnam"
+    }
+]

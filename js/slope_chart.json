@@ -1,106 +1,26 @@
 {
-  "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "description": "todo",
-  "width": 500,
-  "height": 500,
-  "signals": [
-    {"name": "paddingLeft", "value": 100},
-    {"name": "paddingRight", "update": "width - 75"}
-  ],
-  "autosize": {"type": "fit", "contains": "padding"},
-  "data": [
-    {
-      "name": "source",
-      "values": [
-        {"key": "Malaysia", "value": 17.29, "amount": 16.035},
-        {"key": "United States Of America", "value": 9.5, "amount": 7.409}
-
-      ]
-    },
-    {"name": "props", "values": [{"prop": "value"}, {"prop": "amount"}]}
-  ],
-  "scales": [
-    {
-      "name": "x",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "data/pollution_index.json"},
+  "description": "Slope graph showing the change in yield for different barley sites. It shows the error in the year labels for the Morris site.",
+  "mark": {"type" :"line", "point": true},
+  "width": {"step": 300},
+  "encoding": {
+    "x": {
+      "field": "year",
       "type": "ordinal",
-      "domain": {"data": "props", "field": "prop"},
-      "range": {"signal": "[paddingLeft, paddingRight]"}
+      "scale": {"padding": 0.1}
     },
-    {
-      "name": "y1",
-      "type": "linear",
-      "nice": true,
-      "zero": true,
-      "domain": {"data": "source", "field": "value"},
-      "range": "height"
+    "y": {
+      "aggregate": "median",
+      "field": "Pollution_index",
+      "type": "quantitative"
     },
-    {
-      "name": "y2",
-      "type": "linear",
-      "nice": true,
-      "zero": true,
-      "domain": {"data": "source", "field": "amount"},
-      "range": "height"
-    }
-  ],
-  "marks": [
-    {
-      "type": "rule",
-      "from": {"data": "source"},
-      "encode": {
-        "update": {
-          "x": {"scale": "x", "value": "value"},
-          "x2": {"scale": "x", "value": "amount"},
-          "y": {"scale": "y1", "field": "value"},
-          "y2": {"scale": "y2", "field": "amount"},
-          "strokeWidth": {"value": 0.75},
-          "opacity": {"value": 0.5},
-          "tooltip": {"signal": "datum"}
-        }
-      }
-    },
-    {
-      "type": "text",
-      "from": {"data": "source"},
-      "encode": {
-        "update": {
-          "text": {"field": "key"},
-          "x": {"signal": "paddingLeft"},
-          "y": {"scale": "y1", "field": "value"},
-          "align": {"value": "right"},
-          "dx": {"value": -35},
-          "baseline": {"value": "middle"}
-        }
-      }
-    },
-    {
-      "type": "text",
-      "from": {"data": "source"},
-      "encode": {
-        "update": {
-          "text": {"field": "value"},
-          "x": {"signal": "paddingLeft"},
-          "y": {"scale": "y1", "field": "value"},
-          "align": {"value": "right"},
-          "dx": {"value": -5},
-          "baseline": {"value": "middle"}
-        }
-      }
-    },
-    {
-      "type": "text",
-      "from": {"data": "source"},
-      "encode": {
-        "update": {
-          "text": {"signal": "format(datum.amount, ',.2f') + ' €'"},
-          "x": {"signal": "paddingRight"},
-          "y": {"scale": "y2", "field": "amount"},
-          "align": {"value": "left"},
-          "dx": {"value": 5},
-          "baseline": {"value": "middle"}
-        }
-      }
-    }
-  ],
-  "config": {}
+    "color": {"field": "site", "type": "nominal"},
+
+    "tooltip" : [{"field": "site", "type": "nominal"},
+      {"field": "year", "type": "quantitative"},
+      {"field": "Pollution_index", "type": "quantitative"}
+    ]
+  }
+  
 }

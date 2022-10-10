@@ -6,19 +6,27 @@
 }
 
 #slope_chart {
-	top:100px;
+	top: 100px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
 	margin-bottom: 500px;
 }
 
-#horizontal_bar_chart {
+#scatter_plot {
 	top:100px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
-	margin-bottom: 500px;
+	margin-bottom: 100px;
+}
+
+#Bar_chart {
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	margin-bottom: 100px;
 }
 
 body *{

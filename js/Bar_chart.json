@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "repeat": [
+    "Number_of_deaths_2019",
+    "Number_of_deaths_2010",
+    "Number_of_deaths_2000",
+    "Number_of_deaths_1990"
+  ],
+  "title": "Top 5 countries in SEA Deaths Cause By Indoor Air Pollution ",
+  "columns": 2,
+  "spec": {
+    "data": {
+      "url": "data/world_deaths_airpollution_by_age.csv"
+    },
+    "width": 600,
+    "height": 500,
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "Age_type",
+        "type": "nominal",
+        "title": "Age Group"
+      },
+      "y": {
+        "field": {"repeat": "repeat"},
+        "type": "quantitative",
+        "title": "number of deaths"
+      },
+      "tooltip": [
+        {
+          "field": {"repeat": "repeat"},
+          "type": "quantitative"
+        }
+      ],
+      "color": {"field": "Age_type"}
+    }
+    
+  }
+}
