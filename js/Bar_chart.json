@@ -12,19 +12,20 @@
     "data": {
       "url": "data/world_deaths_airpollution_by_age.csv"
     },
-    "width": 600,
-    "height": 500,
+    "width": 400,
+    "height": 350,
     "mark": "bar",
     "encoding": {
       "x": {
         "field": "Age_type",
         "type": "nominal",
         "title": "Age Group"
+        
       },
       "y": {
         "field": {"repeat": "repeat"},
         "type": "quantitative",
-        "title": "number of deaths"
+        "scale": {"domain": [0, 1600000]}
       },
       "tooltip": [
         {

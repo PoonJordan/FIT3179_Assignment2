@@ -3,7 +3,8 @@
   "data": {"url": "data/pollution_index.json"},
   "description": "Slope graph showing the change in yield for different barley sites. It shows the error in the year labels for the Morris site.",
   "mark": {"type" :"line", "point": true},
-  "width": {"step": 300},
+  "width": {"step": 450},
+  "height": 400,
   "encoding": {
     "x": {
       "field": "year",
