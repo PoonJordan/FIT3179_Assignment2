@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-  
+
   <!-- Import pure.css -->
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
-  integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Google font -->
@@ -17,11 +18,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
-  <h1>FIT 3179 Homework 4</h1>
-  <p>Jordan Poon Kee Liang
-    30883679
-  </p>
-
+  <br>
+  <br>
+  <br>
 </head>
 
 <body>
@@ -35,8 +34,17 @@
     <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <h1>Multiple Visualisations</h1>
-        <p>This page demonstrates how you can use pure.css grid for your layout.</p>
+        <div class="title-box">
+          <h1>Indoor Air Pollution</h1>
+        </div>
+
+        <p>
+          <span style="font-size:28px"><span style="color: red">Indoor air pollution</span></span> is caused by burning
+          solid fuel sources – such as <strong>firewood, crop waste, and dung – for cooking and heating.</strong>
+          The burning of such fuels, particularly in poor households,
+          results in air pollution that leads to respiratory diseases which can result in premature death.
+          <strong>The WHO</strong> calls indoor air pollution “the world’s largest single environmental health risk.
+        </p>
       </div>
     </div>
 
@@ -49,11 +57,21 @@
     <div class="pure-g">
       <div class="pure-u-1-2">
         <div class="description description-left">
-          <h2>Two Columns Layout</h2>
-          <p>The first column contains text and the second column contains a visualisation.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. </p>
+          <h2>Air Pollution Index for South East Asia Countries</h2>
+          <p>In general, countries with <span style="font-size:28px"><span style="color: red">higher PM2.5
+                levels</span></span> also have higher mortality rates.
+            Fine particulate matter (PM2.5) is an air pollutant that is a concern for people's health when levels in air
+            are high.
+            PM2.5 are tiny particles in the air that reduce visibility and cause the air to appear hazy when levels are
+            elevated.
+          <p>What level of PM 2.5 is unhealthy?</p>
+          <p><span style="font-size:28px"><span style="color: red">35 μg/m3</span></p>
+          <p>
+          Most studies indicate PM2. 5 at or below 12 μg/m3 is considered healthy with little to no risk from exposure.
+          If the level goes to or <strong>35 μg/m3</strong> during a <strong>24hour</strong> period,
+          the air is considered unhealthy and can cause issues for people with existing breathing issues such as asthma.
+          </p>
+          </p>
         </div>
       </div>
       <div class="pure-u-1-2">
@@ -66,10 +84,10 @@
     <div class="pure-g">
       <div class="pure-u-1-1">
         <div class="description description-left">
-          <h2>Three Equal Columns</h2>
-          <p>Using all three columns without merging. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat
-            sed. Egestas purus viverra accumsan in nisl. Egestas purus viverra accumsan in nisl.</p>
+          <h2>Deaths By Different Age Group</h2>
+          <p>Death rates have declined in almost all countries in the world. All different age group has also seems to be decrease in deaths. 
+          </p>
+          <p></p>
         </div>
       </div>
     </div>
@@ -78,6 +96,10 @@
       <div id="Bar_chart" class="vis-container"></div>
     </div>
     <!-- end pure grid group -->
+    <br>
+    <br>
+    <br>
+    <br>
 
     <!-- pure grid group -->
     <div class="pure-g">
@@ -86,51 +108,53 @@
       </div>
       <div class="pure-u-1-3">
         <div class="description description-right">
-          <h2>First and Second Columns Combined</h2>
-          <p>The first and second columns are combined. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien
-            faucibus et molestie ac feugiat sed. Egestas purus viverra accumsan in nisl.</p>
+          <h2>Deaths By Different Age Group</h2>
+          <p>
+            Which countries in the world have made progress on tackling indoor air pollution in recent decades? 
+            <p>Almost <span style="font-size:28px"><span style="color: red">all countries</span></span> have.</p>
+            <p>            
+              In the scatterplot you see the comparison of the number of deaths
+              from indoor air pollution in 2000 (shown on the x-axis) versus the number in the latest year (on the x-axis). The grey line here marks where the number of deaths
+              would be equal in both years;
+              countries which lie above the line had a higher number of deaths in 1990.
+              and the opposite is true for countries below the line.</p>
+
+          </p>
         </div>
       </div>
-
     </div>
     <!-- end pure grid group -->
 
-    <div class="pure-g">
-      <div class="pure-u-1-1 small-font">
-        <p>This visualisation is created by <a href="https://fit3179.github.io/Vega-Lite/" target="_blank">FIT3179
-            Teaching Team</a>. The datasource is <a href="#" target=" _blank">some data repository online</href>.</p>
-      </div>
-    </div>
 
 
   </div> <!-- end page -->
   <script>
-      var spec1 = "js/choropleth_map.json";
-          vegaEmbed('#choropleth_map', spec1)
-          .then(function(result) {
-              // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-          })
-          .catch(console.error);
+    var spec1 = "js/choropleth_map.json";
+    vegaEmbed('#choropleth_map', spec1)
+      .then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      })
+      .catch(console.error);
 
-      var spec2 = "js/scatter_plot.json";
-          vegaEmbed('#scatter_plot', spec2)
-          .then(function(result) {
-              // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-          })
-          .catch(console.error);
+    var spec2 = "js/scatter_plot.json";
+    vegaEmbed('#scatter_plot', spec2)
+      .then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      })
+      .catch(console.error);
 
-      var spec3 = "js/slope_chart.json";
-          vegaEmbed('#slope_chart', spec3)
-          .then(function(result) {
-              // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-          })
-      var spec4 = "js/Bar_chart.json";
-          vegaEmbed('#Bar_chart', spec4)
-          .then(function(result) {
-              // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-          })
-          .catch(console.error);
+    var spec3 = "js/slope_chart.json";
+    vegaEmbed('#slope_chart', spec3)
+      .then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      })
+    var spec4 = "js/Bar_chart.json";
+    vegaEmbed('#Bar_chart', spec4)
+      .then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      })
+      .catch(console.error);
   </script>
 </body>
+
 </html>

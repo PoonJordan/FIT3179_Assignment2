@@ -1,8 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "title": "Death cause by Indoor Air pollution in 2019",
-  "width":  1350,
+  "title": {
+    "text":"Global View On Percentage Of Population That Have Access To Clean Fuel",
+    "subtitle": "Access to clean fuels or technologies such as clean cookstoves reduce exposure to indoor air pollutants",
+    "fontSize": 28,
+    "subtitleFontSize": 18
+    },
+  "width":  1100,
   "height": 600,
   "projection": {"type": "equalEarth",
     "center": { "expr": "zoomTo" },
@@ -612,7 +617,7 @@
           {
             "field": "population_clean_fuels_and_technologies_for_cooking",
             "type": "quantitative",
-            "title": "Percantage of population have access to clean fuel"
+            "title": "Percantage of population have access to clean fuel (%)"
           }
         ]
       },
@@ -717,7 +722,7 @@
           {
             "field": "population_clean_fuels_and_technologies_for_cooking",
             "type": "quantitative",
-            "title": "Percantage of population have access to clean fuel"
+            "title": "Percantage of population have access to clean fuel (%)"
           }
         ]
       },
@@ -737,5 +742,5 @@
       ]
     }
   ],
-  "config": {}   
+  "config": {"background": "rgb(222, 223, 213)"}
 }

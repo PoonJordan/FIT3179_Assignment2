@@ -37,21 +37,32 @@
 	padding-top: 35px;
   }
 */
+.title-box {
+    background-color: rgb(193, 202, 139);
+    padding-top: 20px;
+    border-style: outset;
+    border-width: 10px;
+    border-color: rgb(193, 202, 139);
+    text-align: center;
+}
+
   body *{
 	font-family: 'Open Sans', sans-serif;
   }
   
   h1 {
-	font-weight: 900;
+	font-weight: 1500;
+	text-align: center;
+	font-size: 65px
   }
   
   body {
-	background-color: lightgray;
+	background-color: whitesmoke;
   }
   
   .page {
-	width: 1500px;
-	background-color: white;
+	width: 1200px;
+	background-color: rgb(222, 223, 213);
 	margin: auto;
 	padding: 50px;
 	padding-top: 35px;
@@ -79,5 +90,9 @@
   }
   
   .small-font {
-	font-size: 14px;
+	font-size: 20px;
+  }
+
+  p {
+	font-size: 20px;
   }

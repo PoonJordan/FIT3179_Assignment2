@@ -1,15 +1,20 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "data/pollution_index.json"},
-  "description": "Slope graph showing the change in yield for different barley sites. It shows the error in the year labels for the Morris site.",
-  "mark": {"type" :"line", "point": true},
-  "width": {"step": 450},
+  "title": {
+    "text":"ASEAN Countries Air Pollution Index",
+    "fontSize": 20
+    },
+
+  "mark": {"type" :"line", "point": {"filled": false , "fill": "white", "size": 35} , "strokeWidth":4},
+  "width": {"step": 400},
   "height": 400,
   "encoding": {
     "x": {
       "field": "year",
       "type": "ordinal",
-      "scale": {"padding": 0.1}
+      "scale": {"padding": 0.1},
+      "title": "Year"
     },
     "y": {
       "aggregate": "median",
@@ -22,6 +27,6 @@
       {"field": "year", "type": "quantitative"},
       {"field": "Pollution_index", "type": "quantitative"}
     ]
-  }
-  
+  },
+  "config": {"background": "rgb(222, 223, 213)"}
 }

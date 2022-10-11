@@ -6,7 +6,11 @@
     "Number_of_deaths_2000",
     "Number_of_deaths_1990"
   ],
-  "title": "Top 5 countries in SEA Deaths Cause By Indoor Air Pollution ",
+  "title": {
+    "text":"Different Age Group Of Deaths Caused By Indoor Air Pollution",
+    "fontSize": 20,
+    "dx": 300
+    },
   "columns": 2,
   "spec": {
     "data": {
@@ -36,5 +40,6 @@
       "color": {"field": "Age_type"}
     }
     
-  }
+  },
+  "config": {"background": "rgb(222, 223, 213)"}
 }
