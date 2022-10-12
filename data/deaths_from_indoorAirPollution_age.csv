@@ -1,4 +1,4 @@
-Entity,Code,Year,Deaths_Age_70+,Deaths_Age_50-69_years,Deaths_Age_15-49_years,Deaths_Age_5-14,Deaths_Age_Under_5
+Entity,Code,Year,Deaths Age 70+,Deaths Age 50-69,Deaths_Age_15-49_years,Deaths_Age_5-14,Deaths_Age_Under_5
 Afghanistan,AFG,1990,7621,9491,2584,288,14388
 Afghanistan,AFG,1991,7708,9572,2664,311,15136
 Afghanistan,AFG,1992,7826,9732,2846,356,17305
