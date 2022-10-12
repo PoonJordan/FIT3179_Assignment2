@@ -1,10 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "repeat": [
-    "Number_of_deaths_2019",
-    "Number_of_deaths_2010",
-    "Number_of_deaths_2000",
-    "Number_of_deaths_1990"
+    "Number of deaths 2019",
+    "Number of deaths 2010",
+    "Number of deaths 2000",
+    "Number of deaths 1990"
   ],
   "title": {
     "text":"Different Age Group Of Deaths Caused By Indoor Air Pollution",
@@ -16,20 +16,31 @@
     "data": {
       "url": "data/world_deaths_airpollution_by_age.csv"
     },
-    "width": 400,
-    "height": 350,
+    "width": 450,
+    "height": 370,
     "mark": "bar",
     "encoding": {
       "x": {
         "field": "Age_type",
         "type": "nominal",
-        "title": "Age Group"
+        "title": "Age Group",
+        "axis": {
+          "labelFontSize": 11,
+          "labelFontWeight":"bold",
+          "titleFontSize": 12
+
+        }
         
       },
       "y": {
         "field": {"repeat": "repeat"},
         "type": "quantitative",
-        "scale": {"domain": [0, 1600000]}
+        "scale": {"domain": [0, 1600000]},
+        "axis": {
+          "labelFontSize": 12,
+          "titleFontSize": 12
+
+        }
       },
       "tooltip": [
         {
@@ -37,7 +48,29 @@
           "type": "quantitative"
         }
       ],
-      "color": {"field": "Age_type"}
+      "color": {"field": "Age_type",
+        "type": "nominal",
+        "scale": {
+          "domain": [
+            "70 and above",
+            "between 50-69",
+            "between 15-49",
+            "between 5-14",
+            "Under 5"
+          ],
+          "range": [
+            "#e41a1c",
+            "#984ea3",
+            "#ff7f00",
+            "#725e34",
+            "#377eb8"
+          ]
+        },
+        "title": "Age Group",
+        "legend": {
+          "labelFontSize": 15
+        }
+      }
     }
     
   },

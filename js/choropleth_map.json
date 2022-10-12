@@ -605,8 +605,8 @@
         "color": {
           "field": "population_clean_fuels_and_technologies_for_cooking",
           "type": "quantitative",
-          "scale": {"type": "linear","domain": [10, 50, 100],"range": ["#d7392f", "#f37c4a", "#fdbc71", "#fce99c", "#e6f29c", "#b5df79", "#72c264", "#299a51"]},
-          "title": "Number of Deaths"
+          "scale": {"type": "linear","domain": [10, 50, 100],"range": ["#a46a1f", "#cda057", "#e8d19e", "#f1ebd6", "#d9ede7", "#a2d9d1", "#5bb0a7", "#1e7f77"]},
+          "title": "Access to Clean Fuel"
         },
         "tooltip": [
           {
@@ -652,7 +652,7 @@
           "field": "population_clean_fuels_and_technologies_for_cooking",
           "type": "quantitative",
           "scale": {"type": "linear"},
-          "title": "Number of Deaths"
+          "title": "Access to Clean Fuel"
         },
         "strokeWidth": {
           "condition": [

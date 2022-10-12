@@ -17,15 +17,43 @@
       "title": "Year"
     },
     "y": {
-      "aggregate": "median",
       "field": "Pollution_index",
-      "type": "quantitative"
+      "type": "quantitative",
+      "title": "Pollution Index"
     },
-    "color": {"field": "site", "type": "nominal"},
+    "color": {"field": "site", "type": "nominal",
+      "scale": {
+        "domain": [
+          "Malaysia",
+          "Brunei",
+          "Cambodia",
+          "Indonesia",
+          "Laos",
+          "Myanmar",
+          "Philippines",
+          "Singapore",
+          "Thailand",
+          "Vietnam"
+        ],
+        "range": [
+          "#808080",
+          "#000000",
+          "#FF0000",
+          "#FFFF00",
+          "#00FF00",
+          "#00FFFF",
+          "#0000FF",
+          "#800080",
+          "#808000",
+          "#000080"
+        ]
+      }
+    
+    },
 
-    "tooltip" : [{"field": "site", "type": "nominal"},
-      {"field": "year", "type": "quantitative"},
-      {"field": "Pollution_index", "type": "quantitative"}
+    "tooltip" : [{"field": "site", "type": "nominal", "title": "Country"},
+      {"field": "year", "type": "quantitative", "title": "Year"},
+      {"field": "Pollution_index", "type": "quantitative", "title": "Pollution Index"}
     ]
   },
   "config": {"background": "rgb(222, 223, 213)"}

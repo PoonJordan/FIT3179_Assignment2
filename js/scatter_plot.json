@@ -2,7 +2,10 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 550,
   "height": 600,
-  "title": "Deaths of Indoor Air Pollution, 2000 VS 2019",
+  "title": {
+    "text":"Deaths of Indoor Air Pollution, 2000 VS 2019",
+    "fontSize": 20
+  },
   "data": {
     "url": "data/Death_2000vs2019.csv"
   },
