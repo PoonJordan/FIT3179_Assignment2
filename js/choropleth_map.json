@@ -5,7 +5,8 @@
     "text":"Global View On Percentage Of Population That Have Access To Clean Fuel",
     "subtitle": "Access to clean fuels or technologies such as clean cookstoves reduce exposure to indoor air pollutants",
     "fontSize": 28,
-    "subtitleFontSize": 18
+    "subtitleFontSize": 18,
+    "font": "sans-serif"
     },
   "width":  1100,
   "height": 600,
@@ -145,8 +146,8 @@
           "Kazakhstan",
           "Kenya",
           "Kiribati",
-          "Korea (the Democratic People's Republic of)",
-          "Korea (the Republic of)",
+          "South Korea",
+          "North Korea",
           "Kuwait",
           "Kyrgyzstan",
           "Lao People's Democratic Republic (the)",
@@ -209,7 +210,7 @@
           "Qatar",
           "Republic of North Macedonia",
           "Romania",
-          "Russian Federation (the)",
+          "Russia",
           "Rwanda",
           "Réunion",
           "Saint Barthélemy",
@@ -263,7 +264,7 @@
           "United Arab Emirates (the)",
           "United Kingdom of Great Britain and Northern Ireland (the)",
           "United States Minor Outlying Islands (the)",
-          "United States of America (the)",
+          "United States of America",
           "Uruguay",
           "Uzbekistan",
           "Vanuatu",
@@ -606,7 +607,10 @@
           "field": "population_clean_fuels_and_technologies_for_cooking",
           "type": "quantitative",
           "scale": {"type": "linear","domain": [10, 50, 100],"range": ["#a46a1f", "#cda057", "#e8d19e", "#f1ebd6", "#d9ede7", "#a2d9d1", "#5bb0a7", "#1e7f77"]},
-          "title": "Access to Clean Fuel"
+          "title": "Access to Clean Fuel",
+          "legend": {
+            "titleFontSize": 12
+          }
         },
         "tooltip": [
           {

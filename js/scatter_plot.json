@@ -4,7 +4,7 @@
   "height": 600,
   "title": {
     "text":"Deaths of Indoor Air Pollution, 2000 VS 2019",
-    "fontSize": 20
+    "fontSize": 28
   },
   "data": {
     "url": "data/Death_2000vs2019.csv"
@@ -68,16 +68,27 @@
       "field": "Deaths_All_Ages_2000",
       "type": "quantitative",
       "title": "Deaths from indoor air pollution in 2000",
-      "axis": {"tickCount": 7},
+      "axis": {"tickCount": 7,
+        "labelFontSize": 12,
+        "titleFontSize": 12},
       "scale": {"type": "log", "domain": [1, 10000000]}
     },
+
     "y": {
       "field": "Deaths_All_Ages_2019",
       "type": "quantitative",
       "title": "Deaths from indoor air pollution in 2019",
-      "axis": {"tickCount": 6},
+      "axis": {"tickCount": 6,         
+        "labelFontSize": 12,
+        "titleFontSize": 12},
       "scale": {"type": "log", "domain": [1, 1000000]}
+    },
+    "color": {          
+      "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12
     }
+  }
   },
   "layer": [
     {
@@ -98,7 +109,9 @@
             "domain": [1000000, 10000000, 50000000, 100000000, 500000000],
             "range": [10, 50, 150, 200, 300, 400]
           },
-          "legend": {"format": ".1s"}
+          "legend": {"format": ".1s",             
+            "labelFontSize": 12,
+            "titleFontSize": 12}
         },
         "color": {
           "field": "Continent",
@@ -120,6 +133,11 @@
               "#377eb8",
               "#284575"
             ]
+          },
+          "title": "Continent",
+          "legend": {
+            "labelFontSize": 12,
+            "titleFontSize": 12
           }
         },
         "opacity": {"value": 0.6},
@@ -155,7 +173,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'China' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country'] == 'Yemen' ||  datum['Country'] == 'United States'",
+            "test": "datum['Country'] == 'Malaysia' || datum['Country'] == 'Russia' || datum['Country'] == 'China' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country'] == 'Yemen' ||  datum['Country'] == 'United States'",
             "value": 1
           },
           "value": 0
