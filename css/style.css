@@ -50,6 +50,10 @@
   .description-left {
 	padding-right: 20px;
   }
+
+  .description-center {
+    text-align: center;
+    }
   
   .pure-g {
 	margin-bottom: 40px;
